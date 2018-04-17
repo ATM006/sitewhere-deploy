@@ -7,11 +7,11 @@ echo "atm starting sitewhere..."
 service mongod start
 
 cd /opt/hivemq-3.0.2/bin/
-./run.sh 
+./run.sh &
 
 #chromium-browser http://localhost:8080/sitewhere/admin/ 
 
-sudo bash /opt/sitewhere/bin/startup.sh 
+sudo bash /opt/sitewhere/bin/startup.sh &
 
 
 
